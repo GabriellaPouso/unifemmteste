@@ -11,6 +11,7 @@ int main(){
         printf("3 - Multiplicação\n");
         printf("4 - Divisão\n");
         printf("5 - Encerrar\n");
+        printf("Digite o número da operação escolhida: ");
         scanf("%d",&operador);
 
         

@@ -1,11 +1,13 @@
 #include <stdio.h>
 int main(){
-    int numero1,numero2,maior;
-    printf("Digite um número: ");
-    scanf("%d",&numero1);
-    printf("Digite outro número: ");
-    scanf("%d",&numero2);
-    maior=numero1>numero2?numero1:numero2;
-    printf("Maior: %d\n",maior);
+    numero=10;
+    //tete condicional
+    if(numero<50){
+        printf("numero menor que 50");
+        }
+    else{
+        printf("numero maior que 50");
+        }
+
     return 0;
 }
