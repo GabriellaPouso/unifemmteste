@@ -1,13 +1,12 @@
 #include <stdio.h>
 int main(){
-    numero=10;
-    //tete condicional
-    if(numero<50){
-        printf("numero menor que 50");
-        }
-    else{
-        printf("numero maior que 50");
-        }
-
-    return 0;
+    int numero,contador,resultado;
+    printf("Qual a tabuada de multiplicar você precisa? ");
+    scanf("%d",&numero);
+    contador=0;
+    while(contador<11){
+        resultado=numero*contador;
+        printf("%d x %d: %d\n",numero,contador,resultado);
+        contador=contador+1;
+    }
 }
