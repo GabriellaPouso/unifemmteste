@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": false,
+      "externalConsole": true,
       "cwd": "c:/Users/gcpp1/OneDrive/Desktop/Documentos/TALENTCLOUD/UNIFEMMteste/unifemmteste-1",
-      "program": "c:/Users/gcpp1/OneDrive/Desktop/Documentos/TALENTCLOUD/UNIFEMMteste/unifemmteste-1/build/Debug/outDebug",
+      "program": "c:/Users/gcpp1/OneDrive/Desktop/Documentos/TALENTCLOUD/UNIFEMMteste/unifemmteste-1/build/Release/outRelease",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
