@@ -3,42 +3,44 @@
 
 using namespace std;
 
-// Função para calcular o dígito verificador
-int calcularDigitoVerificador(const string& cpf, int pesoInicial) {
+bool validarCPF(string cpf) {
+    if (cpf.size() != 11) {
+        return false;
+    }
+
     int soma = 0;
-    for (int i = 0; i < pesoInicial - 1; i++) {
-        soma += (cpf[i] - '0') * (pesoInicial - i);
-    }
-    int digito = 11 - (soma % 11);
-    return (digito >= 10) ? 0 : digito;
-}
-
-// Função para validar o CPF
-bool validarCPF(const string& cpf) {
-    if (cpf.length() != 11) {
-        return false; // CPF deve ter 11 dígitos
+    int peso = 10;
+    for (int i = 0; i < 9; i++) {
+        soma += (cpf[i] - '0') * peso;
+        peso--;
     }
 
-    // Verifica se todos os caracteres são dígitos
-    for (char c : cpf) {
-        if (!isdigit(c)) {
-            return false;
-        }
+    int resto = soma % 11;
+    if (resto < 2) {
+        resto = 0;
+    } else {
+        resto = 11 - resto;
     }
 
-    // Calcula o primeiro dígito verificador
-    int primeiroDigito = calcularDigitoVerificador(cpf, 10);
-    if (primeiroDigito != (cpf[9] - '0')) {
+    if (resto != (cpf[9] - '0')) {
         return false;
     }
 
-    // Calcula o segundo dígito verificador
-    int segundoDigito = calcularDigitoVerificador(cpf, 11);
-    if (segundoDigito != (cpf[10] - '0')) {
-        return false;
+    soma = 0;
+    peso = 11;
+    for (int i = 0; i < 10; i++) {
+        soma += (cpf[i] - '0') * peso;
+        peso--;
     }
 
-    return true; // CPF válido
+    resto = soma % 11;
+    if (resto < 2) {
+        resto = 0;
+    } else {
+        resto = 11 - resto;
+    }
+
+    return resto == (cpf[10] - '0');
 }
 
 int main() {
