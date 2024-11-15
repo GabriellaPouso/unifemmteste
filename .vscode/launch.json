@@ -2,6 +2,20 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "ValidadorCPF",
+      "request": "launch",
+      "mainClass": "ValidadorCPF",
+      "projectName": "unifemmteste-1_ce428c82"
+    },
+    {
+      "type": "java",
+      "name": "testeValidadorCPF",
+      "request": "launch",
+      "mainClass": "testeValidadorCPF",
+      "projectName": "unifemmteste-1_ce428c82"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
