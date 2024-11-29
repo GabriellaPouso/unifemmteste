@@ -1,6 +1,6 @@
 public class ValidadorCPF {
 
-    private String cpf;
+    private final String cpf;
 
     public ValidadorCPF(String cpf) {
         this.cpf = cpf;
