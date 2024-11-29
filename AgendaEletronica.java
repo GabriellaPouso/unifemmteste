@@ -9,38 +9,28 @@ public class AgendaEletronica {
     private static final SimpleDateFormat FORMATO_DATA = new SimpleDateFormat("dd/MM/yyyy");
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        boolean sair = false;
-
-        while (!sair) {
-            System.out.println("\nEscolha uma opção:");
-            System.out.println("1. Inserir novo evento");
-            System.out.println("2. Listar eventos em ordem de data");
-            System.out.println("3. Deletar um evento");
-            System.out.println("4. Sair");
-            System.out.print("Opção: ");
-            int opcao = scanner.nextInt();
-            scanner.nextLine(); // Limpar buffer
-
-            switch (opcao) {
-                case 1:
-                    inserirEvento(scanner);
-                    break;
-                case 2:
-                    listarEventosOrdenados();
-                    break;
-                case 3:
-                    deletarEvento(scanner);
-                    break;
-                case 4:
-                    sair = true;
-                    break;
-                default:
-                    System.out.println("Opção inválida. Tente novamente.");
+        try (Scanner scanner = new Scanner(System.in)) {
+            boolean sair = false;
+            
+            while (!sair) {
+                System.out.println("\nEscolha uma opção:");
+                System.out.println("1. Inserir novo evento");
+                System.out.println("2. Listar eventos em ordem de data");
+                System.out.println("3. Deletar um evento");
+                System.out.println("4. Sair");
+                System.out.print("Opção: ");
+                int opcao = scanner.nextInt();
+                scanner.nextLine(); // Limpar buffer
+                
+                switch (opcao) {
+                    case 1 -> inserirEvento(scanner);
+                    case 2 -> listarEventosOrdenados();
+                    case 3 -> deletarEvento(scanner);
+                    case 4 -> sair = true;
+                    default -> System.out.println("Opção inválida. Tente novamente.");
+                }
             }
         }
-
-        scanner.close();
         System.out.println("Programa encerrado.");
     }
 
@@ -192,9 +182,9 @@ public class AgendaEletronica {
 
     // Classe interna para representar um evento
     static class Evento {
-        private String titulo;
-        private Date dataInicio;
-        private int duracao;
+        private final String titulo;
+        private final Date dataInicio;
+        private final int duracao;
 
         public Evento(String titulo, Date dataInicio, int duracao) {
             this.titulo = titulo;

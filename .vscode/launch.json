@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Fibonacci",
+      "request": "launch",
+      "mainClass": "Fibonacci",
+      "projectName": "unifemmteste-1_ce428c82"
+    },
+    {
+      "type": "java",
       "name": "TransacaoBancaria",
       "request": "launch",
       "mainClass": "TransacaoBancaria",
