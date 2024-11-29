@@ -1,0 +1,12 @@
+Caminhada da Paz;25/02/2025;240
+Reunião de equipe;05/12/2024;120
+Consulta médica;07/12/2024;60
+Aniversário do João;10/12/2024;180
+Entrega de projeto final;15/12/2024;90
+Workshop de programação;18/12/2024;240
+Festa de Natal da empresa;20/12/2024;300
+Exercício físico;22/12/2024;45
+Cinema com amigos;23/12/2024;120
+Compra de presentes;24/12/2024;180
+Ceia de Natal;25/12/2024;360
+teste;25/06/2025;50
