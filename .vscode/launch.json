@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TransacaoBancaria",
+      "request": "launch",
+      "mainClass": "TransacaoBancaria",
+      "projectName": "unifemmteste-1_ce428c82"
+    },
+    {
+      "type": "java",
       "name": "ValidadorCPF",
       "request": "launch",
       "mainClass": "ValidadorCPF",
