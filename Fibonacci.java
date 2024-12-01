@@ -20,13 +20,16 @@ public class Fibonacci
         }
 
         System.out.println();
-    }  
+    }
 
+    /**
+     * @return
+     */
     private static int getTotalTermos()
     {
-        int total_termos;
+        int total_termos = 0 = 0;
         try (Scanner input = new Scanner(System.in)) {
-            try 
+            try
             {
                 System.out.print("Digite a quantidade de termos: " ); 
                 total_termos = input.nextInt();
@@ -40,7 +43,6 @@ public class Fibonacci
             catch(Exception e)
             {
                 System.out.println("Erro - Número inteiro inválido");
-                return getTotalTermos();
             }
         } 
 
