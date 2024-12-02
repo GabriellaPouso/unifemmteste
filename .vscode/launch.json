@@ -3,6 +3,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CalculadoraUI",
+      "request": "launch",
+      "mainClass": "com.example.CalculadoraUI",
+      "projectName": "unifemmteste-1_ce428c82"
+    },
+    {
+      "type": "java",
+      "name": "CalculadoraUI",
+      "request": "launch",
+      "mainClass": "com.example.calculadora.CalculadoraUI",
+      "projectName": "unifemmteste-1_ce428c82"
+    },
+    {
+      "type": "java",
+      "name": "CalculadoraUI",
+      "request": "launch",
+      "mainClass": "CalculadoraProject.scr.com.example.CalculadoraUI",
+      "projectName": "unifemmteste-1_ce428c82"
+    },
+    {
+      "type": "java",
+      "name": "CalculadoraUI",
+      "request": "launch",
+      "mainClass": "CalculadoraProject.scr.com.CalculadoraUI",
+      "projectName": "unifemmteste-1_ce428c82"
+    },
+    {
+      "type": "java",
+      "name": "CalculadoraControle",
+      "request": "launch",
+      "mainClass": "CalculadoraProject.scr.com.example.calculadora.CalculadoraControle",
+      "projectName": "unifemmteste-1_ce428c82"
+    },
+    {
+      "type": "java",
+      "name": "CalculadoraControle",
+      "request": "launch",
+      "mainClass": "CalculadoraControle",
+      "projectName": "unifemmteste-1_ce428c82"
+    },
+    {
+      "type": "java",
       "name": "Fibonacci",
       "request": "launch",
       "mainClass": "Fibonacci",
