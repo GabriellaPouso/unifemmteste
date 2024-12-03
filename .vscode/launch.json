@@ -5,6 +5,13 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "GerencClienteProduto.src.Main",
+      "projectName": "unifemmteste-1_ce428c82"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "com.Main",
       "projectName": "sistemabanca"
     },
