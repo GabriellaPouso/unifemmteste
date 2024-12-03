@@ -1,51 +1,24 @@
-import java.util.Scanner;
+public class Fibonacci {
+    public static void main(String[] args) {
+        // Define o número de elementos desejados na sequência
+        int n = 50;
 
-public class Fibonacci
-{
-    public static void main(String[] args)
-    {
-        int tamanho = getTotalTermos();
-        long[] numeros = new long[tamanho];
+        // Array para armazenar os primeiros 50 números da sequência de Fibonacci
+        long[] fibonacci = new long[n];
 
-        numeros[0]=0;
-        numeros[1]=1;
+        // Inicializa os dois primeiros números da sequência
+        fibonacci[0] = 0;
+        fibonacci[1] = 1;
 
-        System.out.print("0, 1");
-
-        for(int i=2; i<numeros.length; i++)
-        {
-          numeros[i] = numeros[i-1] + numeros[i-2];  
-
-          System.out.print(", " + numeros[i]);
+        // Gera os demais números usando um laço de repetição
+        for (int i = 2; i < n; i++) {
+            fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
         }
 
-        System.out.println();
-    }
-
-    /**
-     * @return
-     */
-    private static int getTotalTermos()
-    {
-        int total_termos = 0 = 0;
-        try (Scanner input = new Scanner(System.in)) {
-            try
-            {
-                System.out.print("Digite a quantidade de termos: " ); 
-                total_termos = input.nextInt();
-
-                if(total_termos<2)
-                {
-                     System.out.println("Por favor digite um número que seja maior do que 1" );
-                     return getTotalTermos();
-                } 
-            }
-            catch(Exception e)
-            {
-                System.out.println("Erro - Número inteiro inválido");
-            }
-        } 
-
-        return total_termos;
+        // Exibe os números da sequência de Fibonacci
+        System.out.println("Os primeiros 50 números da sequência de Fibonacci são:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(fibonacci[i] + " ");
+        }
     }
 }
