@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "BancaDeJornal.Main",
+      "projectName": "unifemmteste-1_ce428c82"
+    },
+    {
+      "type": "java",
       "name": "CalculadoraUI",
       "request": "launch",
       "mainClass": "com.example.CalculadoraUI",
