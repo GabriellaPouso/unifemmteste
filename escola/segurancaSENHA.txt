@@ -1,0 +1,21 @@
+Para fortalecer as senhas de acesso em lojas virtuais, tanto para funcionários quanto para clientes, algumas medidas podem ser tomadas, visando aumentar a segurança dos dados. Aqui estão três métodos eficazes:
+
+## 1. Criação de senhas complexas
+
+* **Combine diferentes tipos de caracteres**: Utilize letras maiúsculas e minúsculas, números e símbolos (!@#$%¨&*(), por exemplo) na mesma senha. Essa mistura torna a senha mais difícil de ser adivinhada por programas de "força bruta".
+* **Use frases ou palavras-chave longas**: Crie frases fáceis de lembrar, mas difíceis de adivinhar, ou utilize palavras-chave longas e aleatórias. Por exemplo: "Eu gosto de pizza de calabresa com borda recheada!" ou "abacaxi_verde_livro_montanha".
+* **Evite informações pessoais óbvias**: Não utilize nomes, datas de nascimento, números de telefone ou endereços como parte da senha. Essas informações são fáceis de encontrar e podem ser usadas para adivinhar a senha.
+
+## 2. Troca regular de senhas
+
+* **Estabeleça uma frequência**: Defina um período máximo para a troca de senhas, como a cada três meses, e siga rigorosamente essa regra.
+* **Não reutilize senhas antigas**: Evite repetir senhas já utilizadas, mesmo que tenham sido modificadas. Isso garante que, caso uma senha seja comprometida, outras contas não sejam afetadas.
+* **Utilize um gerenciador de senhas**: Se você tem dificuldade em lembrar de várias senhas complexas, utilize um gerenciador de senhas. Essas ferramentas armazenam suas senhas de forma segura e podem até gerar senhas aleatórias para você.
+
+## 3. Autenticação de dois fatores (2FA)
+
+* **Ative o 2FA sempre que possível**: A autenticação de dois fatores adiciona uma camada extra de segurança ao seu login. Além da senha, é necessário inserir um código de segurança gerado em outro dispositivo, como seu celular.
+* **Utilize aplicativos autenticadores**: Existem diversos aplicativos que geram códigos de segurança, como Google Authenticator e Authy. Eles são mais seguros do que receber o código por SMS, pois não dependem da sua linha telefônica.
+* **Considere dispositivos de segurança**: Em casos de maior necessidade de segurança, como para acesso a dados confidenciais da empresa, utilize dispositivos de segurança físicos, como tokens ou chaves USB.
+
+Ao seguir essas dicas, tanto funcionários quanto clientes de lojas virtuais podem fortalecer suas senhas e proteger seus dados de acessos não autorizados. Lembre-se que a segurança da informação é responsabilidade de todos e pequenas ações podem fazer uma grande diferença.
